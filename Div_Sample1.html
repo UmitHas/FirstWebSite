@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Div Örneği</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #Header {
+            width: 100%;
+            height: 150px;
+            background-color: red;
+        }
+
+        #Content {
+            width: 100%;
+            height: 400px;
+            background-color: rgb(0, 255, 55);
+        }
+
+        #Left {
+            width: 70%;
+            height: 400px;
+            background-color: gray;
+            float: left;
+        }
+
+        #left-menu {
+            width: 100%;
+            height: 50px;
+            background-color: blueviolet;
+        }
+
+        #Right {
+            position: relative; 
+            background-color: orangered;
+            width: 30%;
+            height: 400px;
+            float: left;
+        }
+
+        #right-menu {
+            position: absolute;
+            bottom: 0;
+            background-color: yellow;
+            width: 100%;
+            height: 50px;
+        }
+
+        #Footer {
+            width: 100%;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Header">Başlık</div>
+    <div id="Content">
+        <div id="Left">
+            <div id="left-menu">
+                menü-1
+            </div>
+        </div>
+        <div id="Right">
+            <div id="right-menu">
+                menü-2
+            </div>
+        </div>
+    </div>
+
+    <div id="Footer">Alt Bölüm</div>
+
+</body>
+
+</html>
